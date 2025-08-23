@@ -1,0 +1,183 @@
+/* theme colors */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+
+
+
+#hero1 {
+    background-image: url("assets/images/hills1.png");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Stress Cards Section Styles */
+.stress-cards-section {
+    background-color: #f8f9fa;
+}
+
+.stress-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stress-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stress-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.stress-card .card-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.stress-card .card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.stress-card .accordion-button {
+    background-color: #e9ecef;
+    border: none;
+    color: #495057;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.stress-card .accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+    box-shadow: none;
+}
+
+.stress-card .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.stress-card .accordion-body {
+    padding: 15px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.stress-cards-section h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stress-card .card-img-top {
+        height: 180px;
+    }
+    
+    .stress-cards-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .stress-cards-section h2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+
+/* gallery styles */
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1{
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  background-image: url('assets/images/pexels-freestockpro-12940876-min.jpg');
+}
+
+.item-2 { 
+  background-image: url('assets/images/pexels-maxandrey-1229753-min.jpg');
+}
+
+.item-3 { 
+  background-image: url('assets/images/pexels-pixabay-289998-min.jpg');
+}
+
+.item-4 { 
+  background-image: url('assets/images/pexels-yasar-baskurt-706180077-27820065-min.jpg');
+}
+
+.item-5 { 
+  background-image: url('assets/images/pexels-pixabay-235990-min.jpg');
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  
+  img{
+    display: block;
+    width: 32px;
+  }
+}
