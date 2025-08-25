@@ -36,12 +36,18 @@ h2 {
     opacity: 0.8;
 }
 
-/* Stress Cards Section Styles */
-.stress-cards-section {
+/* Card Sections Background Styles */
+.stress-cards-section,
+.relaxation-cards-section {
     background-color: #f8f9fa;
 }
 
-.stress-card {
+.neurodivergence-cards-section {
+    background-color: #ffffff;
+}
+
+/* Universal Card Styles */
+.cards {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
     border-radius: 15px;
@@ -49,30 +55,30 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.stress-card:hover {
+.cards:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.stress-card .card-img-top {
+.cards .card-img-top {
     height: 200px;
     object-fit: cover;
     border-radius: 0;
 }
 
-.stress-card .card-title {
+.cards .card-title {
     color: #2c3e50;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.stress-card .card-text {
+.cards .card-text {
     color: #6c757d;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.stress-card .accordion-button {
+.cards .accordion-button {
     background-color: #e9ecef;
     border: none;
     color: #495057;
@@ -81,187 +87,43 @@ h2 {
     font-size: 0.9rem;
 }
 
-.stress-card .accordion-button:not(.collapsed) {
+/* Relaxation Styles */
+.img-fluid {
+    max-width: fit-content;
+}
+
+/* Section-specific accordion colors */
+.stress-cards-section .cards .accordion-button:not(.collapsed) {
     background-color: #007bff;
     color: white;
     box-shadow: none;
 }
 
-.stress-card .accordion-button:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.stress-card .accordion-body {
-    padding: 15px;
-    background-color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #495057;
-}
-
-.stress-cards-section h2 {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 3rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .stress-card .card-img-top {
-        height: 180px;
-    }
-    
-    .stress-cards-section {
-        padding: 3rem 0 !important;
-    }
-    
-    .stress-cards-section h2 {
-        margin-bottom: 2rem;
-        font-size: 1.8rem;
-    }
-}
-
-/* Neurodivergence Cards Section Styles */
-.neurodivergence-cards-section {
-    background-color: #ffffff;
-}
-
-.neurodivergence-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.neurodivergence-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.neurodivergence-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.neurodivergence-card .card-title {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.neurodivergence-card .card-text {
-    color: #6c757d;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.neurodivergence-card .accordion-button {
-    background-color: #e9ecef;
-    border: none;
-    color: #495057;
-    font-weight: 500;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-}
-
-.neurodivergence-card .accordion-button:not(.collapsed) {
+.neurodivergence-cards-section .cards .accordion-button:not(.collapsed) {
     background-color: #6f42c1;
     color: white;
     box-shadow: none;
 }
 
-.neurodivergence-card .accordion-button:focus {
-    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
-}
-
-.neurodivergence-card .accordion-body {
-    padding: 15px;
-    background-color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #495057;
-}
-
-.neurodivergence-cards-section h2 {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 3rem;
-}
-
-/* Responsive adjustments for neurodivergence cards */
-@media (max-width: 768px) {
-    .neurodivergence-card .card-img-top {
-        height: 180px;
-    }
-    
-    .neurodivergence-cards-section {
-        padding: 3rem 0 !important;
-    }
-    
-    .neurodivergence-cards-section h2 {
-        margin-bottom: 2rem;
-        font-size: 1.8rem;
-    }
-}
-
-/* Relaxation Strategies Cards Section Styles */
-.relaxation-cards-section {
-    background-color: #f8f9fa;
-}
-
-.relaxation-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.relaxation-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.relaxation-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.relaxation-card .card-title {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.relaxation-card .card-text {
-    color: #6c757d;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.relaxation-card .accordion-button {
-    background-color: #e9ecef;
-    border: none;
-    color: #495057;
-    font-weight: 500;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-}
-
-.relaxation-card .accordion-button:not(.collapsed) {
+.relaxation-cards-section .cards .accordion-button:not(.collapsed) {
     background-color: #20c997;
     color: white;
     box-shadow: none;
 }
 
-.relaxation-card .accordion-button:focus {
+.stress-cards-section .cards .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.neurodivergence-cards-section .cards .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+.relaxation-cards-section .cards .accordion-button:focus {
     box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
 }
 
-.relaxation-card .accordion-body {
+.cards .accordion-body {
     padding: 15px;
     background-color: #ffffff;
     font-size: 0.9rem;
@@ -269,28 +131,33 @@ h2 {
     color: #495057;
 }
 
+.stress-cards-section h2,
+.neurodivergence-cards-section h2,
 .relaxation-cards-section h2 {
     color: #2c3e50;
     font-weight: 700;
     margin-bottom: 3rem;
 }
 
-/* Responsive adjustments for relaxation cards */
+/* Universal responsive adjustments for all card sections */
 @media (max-width: 768px) {
-    .relaxation-card .card-img-top {
+    .cards .card-img-top {
         height: 180px;
     }
     
+    .stress-cards-section,
+    .neurodivergence-cards-section,
     .relaxation-cards-section {
         padding: 3rem 0 !important;
     }
     
+    .stress-cards-section h2,
+    .neurodivergence-cards-section h2,
     .relaxation-cards-section h2 {
         margin-bottom: 2rem;
         font-size: 1.8rem;
     }
 }
-
 
 /* gallery styles */
 
@@ -403,3 +270,28 @@ h1{
 #contact .table-dark * {
     background-color: transparent;
 }
+
+/* Media queries  */
+
+@media (max-width: 576px) { 
+
+    
+.gallery-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+  .item:hover {
+    flex: 7;
+  }
+ }
