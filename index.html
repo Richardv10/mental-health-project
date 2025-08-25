@@ -55,7 +55,7 @@
         <!-- Intro section-->
 <h2>Welcome to Better Brains @ The Mental Health Project</h2>
    <p> Here you can find a selection of resources and tools to help you manage stress and improve your mental well-being.</p>
-</div>
+
 
 <section>
 <h2> FAQ's </h2>
@@ -323,48 +323,93 @@
         </div>
     </div>
 </section>
+
 <!-- Relaxation Strategies-->
-<section class="py-5">
+<section id="relaxation-strategies">
 <div class="container">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul class="nav nav-tabs" id="myTab" role="tablist" width="75%">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Breathing exercises</button>
+    <button class="nav-link active" id="breathing-tab" data-bs-toggle="tab" data-bs-target="#breathing-tab-pane" type="button" role="tab" aria-controls="breathing-tab-pane" aria-selected="true">Deep Breathing</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Exercise</button>
+    <button class="nav-link" id="exercise" data-bs-toggle="tab" data-bs-target="#exercise-tab-pane" type="button" role="tab" aria-controls="exercise-tab-pane" aria-selected="false">Exercise</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Nature Bathing</button>
+    <button class="nav-link" id="nature-tab" data-bs-toggle="tab" data-bs-target="#nature-tab-pane" type="button" role="tab" aria-controls="nature-tab-pane" aria-selected="false">Nature Bathing</button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="meditation-tab" data-bs-toggle="tab" data-bs-target="#meditation-tab-pane" type="button" role="tab" aria-controls="meditation-tab-pane" aria-selected="false" >Meditation</button>
   </li>
 </ul>
+
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> <img src="assets\images\breath.jpg" alt="Breathing Exercises" class="img-fluid"> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, vitae assumenda. Ex, ad qui! Eaque cumque quas tempora architecto consectetur quis, fugiat, ipsam nulla qui, aut earum at illo saepe!</p></div>
-  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque maxime earum eaque facilis accusamus! Nemo odit sint necessitatibus officia esse, suscipit, aperiam maxime aut quos distinctio rem quibusdam fugit?</div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque maxime earum eaque facilis accusamus! Nemo odit sint necessitatibus officia esse, suscipit, aperiam maxime aut quos distinctio rem quibusdam fugit?..</div>
-  <div class="tab-pane fade" id="meditation-tab-pane" role="tabpanel" aria-labelledby="meditation-tab" tabindex="0">.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque maxime earum eaque facilis accusamus! Nemo odit sint necessitatibus officia esse, suscipit, aperiam maxime aut quos distinctio rem quibusdam fugit?..</div>
+  <div class="tab-pane fade show active" id="breathing-tab-pane" role="tabpanel" aria-labelledby="breathing-tab" tabindex="0"> 
+    
+    <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+  <img src="assets\images\breath.jpg" class="card-img-top" alt="Breathing Exercises"> </div>
+  <div class="col-md-8">
+  <div class="card-body">
+    <h5 class="card-title">In....and out</h5>
+    <p class="card-text"> It may sound like a cliche, but deep breathing is a powerful tool for relaxation. By focusing on your breath, you can calm your mind and reduce stress. Try taking deep breaths in through your nose, holding for a few seconds, and exhaling slowly through your mouth. </p>
+    </div></div></div></div></div></div>
+
+  <div class="tab-pane fade" id="exercise-tab-pane" role="tabpanel" aria-labelledby="exercise-tab" tabindex="0">
+
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+  <img src="assets\images\pexels-mastercowley-1199590-min.jpg" class="card-img-top" alt="exercise"> </div>
+  <div class="col-md-8">
+  <div class="card-body">
+    <h5 class="card-title">Lets get moving!</h5>
+    <p class="card-text"> Physical activity is a great way to relieve stress and improve your mood. Whether it's a brisk walk, a workout session, or dancing to your favorite song, getting your body moving can help release endorphins and boost your overall well-being. </p>
+    </div></div></div></div></div>
+
+  <div class="tab-pane fade" id="nature-tab-pane" role="tabpanel" aria-labelledby="nature-tab" tabindex="0"> 
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+  <img src="assets\images\pexels-soldiervip-1308881-min.jpg" class="card-img-top" alt="Nature Bathing"> </div>
+  <div class="col-md-8">
+  <div class="card-body">
+    <h5 class="card-title">Touch some grass</h5>
+    <p class="card-text">Spending time n nature can significantly reduce stress and improve your mood. Whether it's a walk in the park, hiking in the woods, or simply sitting under a tree, immersing yourself in the natural world can have a calming effect on your mind and body.</p>
+    </div></div></div></div></div>
+
+  <div class="tab-pane fade" id="meditation-tab-pane" role="tabpanel" aria-labelledby="meditation-tab" tabindex="0"> 
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+  <img src="assets\images\pexels-oluremi-adebayo-1507823-2908175-min.jpg" class="card-img-top" alt="Meditation"> </div>
+  <div class="col-md-8">
+  <div class="card-body">
+    <h5 class="card-title">In....and out</h5>
+    <p class="card-text"> It may sound like a cliche, but deep breathing is a powerful tool for relaxation. By focusing on your breath, you can calm your mind and reduce stress. Try taking deep breaths in through your nose, holding for a few seconds, and exhaling slowly through your mouth. </p>
+    </div></div></div></div></div>
 </div>
-
-</div>
-
+</section>
 
 
+<section>
 
-
-
-
+<!-- Relaxation Corner with accordion carousel (cause I'm fancy)-->
+ <h2>Browse some Relaxing Images</h2>
+<div class="container">
+    <div class="gallery-wrap">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+ </div>
 
 
 
 
 </section>
-
-
-
-
-
 
 
 

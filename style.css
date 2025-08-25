@@ -234,6 +234,14 @@ h1{
   }
 }
 
+
+/* Relaxation Styles */
+
+.myTabContent {
+    max-height: 60%;
+    overflow-y: auto;
+}
+
 /* Footer Styles */
 
 #contact {
