@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -43,9 +43,10 @@
     </header>
 
     <main>
+        <!-- Hero Section  -->
         <div class="jumbotron jumbotron-fluid" id="hero1">
   <div class="container">
-    <h1 class="display-4">Better Brains</h1>
+    <h1 class="display-1" id="herotitle">Better Brains</h1>
     <p class="lead">Welcome to your Oasis of Calm.</p>
     <button type="button" class="btn btn-primary btn-lg">Join our Mailing List</button>
 <button type="button" class="btn btn-secondary btn-lg">Play me Whale Song</button>
@@ -57,8 +58,17 @@
 </div>
 
 <section>
-
-
+<!-- Relaxation Corner with accordion carousel (cause I'm fancy)-->
+ <h2>Browse some Relaxing Images</h2>
+<div class="container">
+    <div class="gallery-wrap">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+ </div>
 
 
 </section>
@@ -170,32 +180,6 @@
     </div>
 </section>
 
-<section>
-<!-- Relaxation Corner with carousel-->
-<div class="container">
-  <h1>Gallery</h1>
-
-  <div class="gallery-wrap">
-    <div class="item item-1"></div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
-  </div>
- </div>
-
-<div class="social">
-  <a href="https://twitter.com/StefCharle" target="_blank">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
-  </a>
-</div>
-
-
-
-
-
-
-</section>
 
 <!-- Neurodivergence Cards-->
 <section class="neurodivergence-cards-section py-5">
@@ -305,16 +289,214 @@
     </div>
 </section>
 
+<!-- Relaxation Strategies Cards-->
+<section class="relaxation-cards-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Relaxation Strategies</h2>
+        <div class="row g-4">
+            <!-- Card 1: Deep Breathing -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 relaxation-card">
+                    <img src="https://via.placeholder.com/300x200/17a2b8/ffffff?text=Deep+Breathing" class="card-img-top" alt="Deep Breathing">
+                    <div class="card-body">
+                        <h5 class="card-title">Deep Breathing</h5>
+                        <p class="card-text">Simple breathing techniques to calm your mind and reduce stress instantly.</p>
+                        <div class="accordion" id="breathingAccordion">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="breathingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#breathingCollapse" aria-expanded="false" aria-controls="breathingCollapse">
+                                        Learn More
+                                    </button>
+                                </h6>
+                                <div id="breathingCollapse" class="accordion-collapse collapse" aria-labelledby="breathingHeading" data-bs-parent="#breathingAccordion">
+                                    <div class="accordion-body">
+                                        Deep breathing exercises are one of the most effective ways to activate your body's relaxation response. Try the 4-7-8 technique: inhale for 4 counts, hold for 7, and exhale for 8. Practice this for just 5 minutes daily to reduce anxiety, lower blood pressure, and improve focus.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Mindfulness Meditation -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 relaxation-card">
+                    <img src="https://via.placeholder.com/300x200/20c997/ffffff?text=Mindfulness" class="card-img-top" alt="Mindfulness Meditation">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindfulness Meditation</h5>
+                        <p class="card-text">Practice present-moment awareness to reduce anxiety and increase mental clarity.</p>
+                        <div class="accordion" id="mindfulnessAccordion">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="mindfulnessHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mindfulnessCollapse" aria-expanded="false" aria-controls="mindfulnessCollapse">
+                                        Learn More
+                                    </button>
+                                </h6>
+                                <div id="mindfulnessCollapse" class="accordion-collapse collapse" aria-labelledby="mindfulnessHeading" data-bs-parent="#mindfulnessAccordion">
+                                    <div class="accordion-body">
+                                        Mindfulness meditation involves focusing on the present moment without judgment. Start with just 5-10 minutes daily, sitting comfortably and observing your breath. When your mind wanders, gently bring attention back to your breathing. Regular practice can reduce stress, improve emotional regulation, and enhance overall well-being.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Progressive Muscle Relaxation -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 relaxation-card">
+                    <img src="https://via.placeholder.com/300x200/fd7e14/ffffff?text=Muscle+Relaxation" class="card-img-top" alt="Progressive Muscle Relaxation">
+                    <div class="card-body">
+                        <h5 class="card-title">Progressive Muscle Relaxation</h5>
+                        <p class="card-text">Systematically tense and release muscle groups to achieve deep physical relaxation.</p>
+                        <div class="accordion" id="pmrAccordion">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="pmrHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pmrCollapse" aria-expanded="false" aria-controls="pmrCollapse">
+                                        Learn More
+                                    </button>
+                                </h6>
+                                <div id="pmrCollapse" class="accordion-collapse collapse" aria-labelledby="pmrHeading" data-bs-parent="#pmrAccordion">
+                                    <div class="accordion-body">
+                                        Progressive Muscle Relaxation (PMR) involves tensing specific muscle groups for 5-10 seconds, then releasing and noticing the contrast. Start with your toes and work up to your head. This technique helps identify areas of tension you might not notice and teaches your body how to achieve deep relaxation on command.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Nature Therapy -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 relaxation-card">
+                    <img src="https://via.placeholder.com/300x200/198754/ffffff?text=Nature+Therapy" class="card-img-top" alt="Nature Therapy">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature Therapy</h5>
+                        <p class="card-text">Connect with the outdoors to reduce stress and boost your mental well-being naturally.</p>
+                        <div class="accordion" id="natureAccordion">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="natureHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#natureCollapse" aria-expanded="false" aria-controls="natureCollapse">
+                                        Learn More
+                                    </button>
+                                </h6>
+                                <div id="natureCollapse" class="accordion-collapse collapse" aria-labelledby="natureHeading" data-bs-parent="#natureAccordion">
+                                    <div class="accordion-body">
+                                        Spending time in nature has proven benefits for mental health, including reduced cortisol levels, improved mood, and enhanced creativity. Even 15-20 minutes outdoors can make a difference. Try forest bathing, gardening, or simply sitting in a park. If outdoor access is limited, indoor plants or nature sounds can provide similar benefits.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact us section-->
+<section>
+    <div class="container">
+        <h2 class="text-center col-12 col-lg-6 mb-3">Join our mailing list</h2>
+        <p>Stay updated with the latest news and resources for mental well-being.</p>
+        <form action="success.html" method="GET">
+            <div class="col-12 col-lg-6 mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-12 col-lg-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12 col-lg-6 mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+</section>
+
     </main>
 
     
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Mental Health Project. All rights reserved.</p>
+    <!-- Footer / contact section -->
+
+    <!-- mt-auto added to push footer to the bottom of the page -->
+
+    <footer id="contact" class="mt-auto">
+        <div class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center"></div>
+                <!-- Contact info -->
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="sub-heading-color">Contact info</h3>
+                    <address>
+                       Better Brains <br>
+                         123 Cerebrum way <br>
+                        Hypocampia <br> 
+                        ST 12345</p> 
+                    </address>
+                    <p> <i class="fa-solid fa-phone"></i> 0123456578<br>
+                        <i class="fa-solid fa-paper-plane"></i> info@betterbrains.com
+                    </p>
+                    <div class="social-links my-4">
+                        <a href="www.facebook.com" target="_blank"  aria-label="Link to facebook" rel="noopener"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+
+                            <a href="www.twitter.com" target="_blank"  aria-label="Link to elons hell hole" rel="noopener"><i class="fa-brands fa-square-x-twitter fa-xl" ></i></a>
+
+                            <a href="www.instagram.com" target="_blank" aria-label="link to insta baby" rel="noopener"> <i class="fa-brands fa-square-instagram fa-xl" ></i>
+                        </a>
+
+
+                    </div>
+                </div>
+                <!-- Opening times -->
+                 <div class="col-12 col-md-6 col-xl-4">
+                    <h3 class="sub-heading-color">Here to Talk</h3>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Open</th>
+                                <th scope="col">Close</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Mon</th>
+                                <td colspan="2">Closed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tue - Thur</th>
+                                <td>11am</td>
+                                <td>11pm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fri - Sat</th>
+                                <td>11am</td>
+                                <td>12am</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sun</th>
+                                <td>12pm</td>
+                                <td>7pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </footer>
-
 
 
 

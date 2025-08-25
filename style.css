@@ -1,13 +1,26 @@
 /* theme colors */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --success-color: #28a745;
-    --info-color: #17a2b8;
-    --warning-color: #ffc107;
+    --primary-color: #5E96C6;
+    --secondary-color: #F0BD07;
+    --highlight-color: #477C2D;
+    --pink-color: #cc91dc;
+    
+    /*--warning-color: #ffc107;
     --danger-color: #dc3545;
     --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --dark-color: #343a40; */
+}
+
+#herotitle {
+    color: var(--sky-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--flower-color);
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 
@@ -193,6 +206,91 @@
     }
 }
 
+/* Relaxation Strategies Cards Section Styles */
+.relaxation-cards-section {
+    background-color: #f8f9fa;
+}
+
+.relaxation-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.relaxation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.relaxation-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.relaxation-card .card-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.relaxation-card .card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.relaxation-card .accordion-button {
+    background-color: #e9ecef;
+    border: none;
+    color: #495057;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.relaxation-card .accordion-button:not(.collapsed) {
+    background-color: #20c997;
+    color: white;
+    box-shadow: none;
+}
+
+.relaxation-card .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}
+
+.relaxation-card .accordion-body {
+    padding: 15px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.relaxation-cards-section h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+/* Responsive adjustments for relaxation cards */
+@media (max-width: 768px) {
+    .relaxation-card .card-img-top {
+        height: 180px;
+    }
+    
+    .relaxation-cards-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .relaxation-cards-section h2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
 
 /* gallery styles */
 
@@ -216,6 +314,8 @@ h1{
   color: #424242;
 }
 
+/* flexbox styles for gallery */
+
 .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -230,11 +330,11 @@ h1{
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease;
-  
-  &:hover{
+}
+  .item:hover {
     flex: 7;
   }
-}
+
 
 .item-1 { 
   background-image: url('assets/images/pexels-freestockpro-12940876-min.jpg');
@@ -265,4 +365,41 @@ h1{
     display: block;
     width: 32px;
   }
+}
+
+/* Footer Styles */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#contact h2 {
+    color: black;
+}
+
+#contact .sub-heading-color {
+    color: var(--highlight-color);
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--highlight-color);
+    font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+#contact .table-dark * {
+    background-color: transparent;
 }
