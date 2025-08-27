@@ -1,32 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* theme colors */
 :root {
     --primary-color: #00468c;
     --secondary-color: #b54714;
-    --highlight-color: #d76f39;
+    --highlight-color: #ffea61;
     --pink-color: #f0aaa2;
     --background-color: #3de0b5;
     --green-color: #00a589;
     --brown-color: #67281a;
     --grey-color: grey;
     --aqua-color: #249D9F;
-    --yellow-color: #ffdd3c;
+    --yellow-color: #d76f39;
     --blue-dark: #2c3e50;
 }
 
-#herotitle {
-    color: var(--yellow-color);
-    font-size: 8rem;
-    font-weight: 900;
-    font-family: 'Barriecito', cursive;
-    background-color: #2c3e50;
+
+/* Global override for all rounded corners */
+* {
+    border-radius: 0 !important;
+}
+
+/* modern hyperlinks */
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* Modern Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color) !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
 h2 {
-    color: var(--blue-dark);
     font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
     font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
 }
 main {
   background-color: var(--background-color);
@@ -38,20 +85,30 @@ main {
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--highlight-color) !important;
+  color:#2c3e50 !important;
+  box-shadow: var(--primary-color) 0 6px 8px
 }
 
 .btn {
-  background-color: var(--primary-color) !important;
+  background-color: var(--aqua-color) !important;
   color: white !important;
-  border: 1px solid #424242;
+  border: solid 1px var(--blue-dark) !important;
 }
 
 .backfill {
   background-color: var(--yellow-color) !important;
 }
 
-
+#intro {
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+  color: var(--blue-dark);
+  background-color: var(--yellow-color);
+  border: 1px solid var(--secondary-color);
+  box-shadow: var(--primary-color) 0 8px 10px;
+}
 
 #hero1 {
     background-image: url("assets/images/hero2.jpg");
@@ -75,18 +132,18 @@ button:hover {
 /* Accordion Styles */
 
 .accordion-button {
-    background-color: var(--yellow-color);
+    background-color: var(--yellow-color) !important;
     color: var(--blue-dark);
     font-weight: 700;
 }
 
 .accordion-button:hover {
     background-color: var(--highlight-color);
-    color: white;
+    color: var(--blue-dark);
 }
 
 .accordion-body {
-    background-color: var(--blue-dark);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -95,17 +152,27 @@ button:hover {
 .stress-cards-section {
   background-color: var(--background-color);
 }
+
 /* Universal Card Styles */
 .cards {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    border-radius: 15px;
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    
 }
 .card-body {
    background-color: var(--yellow-color);
+}
+
+#financial-stress, #relationship-stress, #work-stress, #health-stress {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#adhd, #autism, #dyslexia, #tourettes {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .cards:hover {
@@ -131,27 +198,12 @@ button:hover {
     line-height: 1.5;
 }
 
-.stress-cards-section h2,
-.neurodivergence-cards-section h2,
-.relaxation-cards-section h2 {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 3rem;
-}
-
 
     
     .stress-cards-section,
     .neurodivergence-cards-section,
     .relaxation-cards-section {
         padding: 3rem 0 !important;
-    }
-    
-    .stress-cards-section h2,
-    .neurodivergence-cards-section h2,
-    .relaxation-cards-section h2 {
-        margin-bottom: 2rem;
-        font-size: 1.8rem;
     }
 
 
@@ -165,17 +217,8 @@ html,body {
 
 .container {
   padding: 10px 0;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 1140px;
-}
-
-h1{
-  position: relative;
-  margin-bottom: 45px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 44px;
-  text-transform: uppercase;
-  color: #424242;
 }
 
 /* flexbox styles for gallery */
@@ -225,7 +268,7 @@ h1{
   right: 35px;
   bottom: 0;
   
-  img{
+  img {
     display: block;
     width: 32px;
   }
@@ -245,10 +288,6 @@ h1{
     background-color: var(--primary-color);
     color: white;
     padding-bottom: 3rem;
-}
-
-#contact h2 {
-    color: black;
 }
 
 #contact .sub-heading-color {
@@ -300,3 +339,10 @@ h1{
     flex: 7;
   }
  }
+/*
+ @media (max-width: 768px) {
+    .card-img-top {
+      min-height: 800px;
+    }
+    }
+ */
